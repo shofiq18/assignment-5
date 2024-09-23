@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment5</title>
+    <title>Donate Bangladesh</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,33 +23,40 @@
 </head>
 
 <body class="bg-white font-lexend">
-    <header>
-        <!-- Navber  start here -->
-        <section class="bg-[#F9F7F3] py-8">
-            <div class="px-3 lg:max-w-6xl mx-auto flex justify-between items-center ">
-                <div>
-                    <button class="bg-[#B4F461] py-3 px-8 rounded-lg text-xl font-semibold text-black">Blog</button>
+    <header class="sticky top-0">
+        <!--nav Navber  start here -->
+        <nav class=" ">
+            <section class="bg-[#F9F7F3] py-8">
+                <div class="px-3 lg:max-w-6xl mx-auto flex justify-between items-center ">
+                    <div>
+                        <a href="blog.html">  <button  class="bg-[#B4F461] py-3 px-8 rounded-lg text-xl font-semibold text-black">Blog</button></a>
+                    </div>
+                    <div class=" flex justify-center items-center gap-3">
+                        <img src="assets/logo.png" alt="">
+                        <p class="text-xl font-semibold text-black hidden lg:block">Donate Bangladesh</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="assets/coin.png" alt="">
+                        <p class="text-xl font-medium text-gray-500">10000 BDT</p>
+                    </div>
+    
                 </div>
-                <div class=" flex justify-center items-center gap-3">
-                    <img src="assets/logo.png" alt="">
-                    <p class="text-xl font-semibold text-black hidden lg:block">Donate Bangladesh</p>
+    
+            </section>
+            <!-- Navber end here -->
+    
+            <!-- Button & History  section start here -->
+            <div class="bg-white">
+                <div class="max-w-6xl mx-auto flex justify-center items-center  space-x-8 lg:space-x-12 pt-16 pb-6  ">
+                    <button class="bg-[#B4F461] py-4 px-8 rounded-lg text-xl font-semibold text-black">Donation</button>
+                    <button class=" bg-slate-50 border-solid border-2 border-gray-300 py-4 px-8 rounded-lg text-xl font-semibold text-gray-500">History</button>
                 </div>
-                <div class="flex justify-center items-center gap-3">
-                    <img src="assets/coin.png" alt="">
-                    <p class="text-xl font-medium text-gray-500">10000 BDT</p>
-                </div>
-
+                <div class="divider mt-0 mb-0"></div>
             </div>
-
-        </section>
-        <!-- Navber end here -->
-
-        <!-- Button & History  section start here -->
-        <div class=" max-w-6xl mx-auto flex justify-center items-center space-x-8 lg:space-x-3 mt-20 mb-8  ">
-            <button class="bg-[#B4F461] py-4 px-8 rounded-lg text-xl font-semibold text-black">Donation</button>
-            <button
-                class=" bg-slate-50 border-solid border-2 border-gray-300 py-4 px-8 rounded-lg text-xl font-semibold text-gray-500">History</button>
-        </div>
+            
+           
+        </nav>
+        
 
     </header>
     <main>
@@ -147,6 +154,8 @@
 
     </main>
     <footer>
+
+
 
     </footer>
 

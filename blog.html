@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog || Donate Bangladesh</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind & daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+         <!-- Navber  start here -->
+         <section class="bg-[#F9F7F3] py-8">
+            <div class="px-3 lg:max-w-6xl mx-auto flex justify-between items-center ">
+                <div>
+                    <a href="index.html"><button class="bg-[#B4F461] py-3 px-8 rounded-lg text-xl font-semibold text-black">Home</button></a>
+                </div>
+                <div class=" flex justify-center items-center gap-3">
+                    <img src="assets/logo.png" alt="">
+                    <p class="text-xl font-semibold text-black hidden lg:block">Donate Bangladesh</p>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                    <img src="assets/coin.png" alt="">
+                    <p class="text-xl font-medium text-gray-500">10000 BDT</p>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </header>
+    
+       
+
+        <!-- Imoportant FAQ  start here -->
+
+
+    <main class="bg-white my-10">
+
+            <h1 class=" lg:max-w-6xl mx-auto px-12 lg:px-0 font-bold text-3xl lg:text-4xl text-gray-800 my-8 ">Imoportant FAQ <i
+                    class="fa-regular fa-circle-question"></i> </h1>
+
+
+              <!-- FAQ 1 -->
+            <div class="relative lg:max-w-6xl mx-auto  bg-white rounded-t-lg border-solid border-2 border-gray-100 ">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input1" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input1" class="font-bold text-gray-700 text-lg lg:text-xl mx-5 h-[80px] flex items-center">What is
+                 the Document
+                 Object Model (DOM)?
+                </label>
+                <!-- Arrow -->
+                <div class="absolute top-6 right-2 lg:right-8 rotate-0 peer-checked:rotate-180">
+                 <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <!-- content -->
+              <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                 <p class="p-5 text-sm text-black "> The Document Object Model (DOM) is a programming interface
+                     for web documents. It represents the page so that programs can change the document
+                     structure, style, and content. The DOM represents the document as nodes and objects; that
+                     way, programming languages can interact with the page. </p>
+             </div>
+         </div>
+
+         <!-- FAQ  2 -->
+         
+
+             <div class="relative lg:max-w-6xl mx-auto  bg-white  border-solid border-2 border-gray-100 ">
+                 <!-- input checkbox -->
+                 <input type="checkbox" id="input2" class="absolute peer opacity-0">
+                 <!-- heading -->
+                 <label for="input2" class="font-bold text-gray-700 text-lg lg:text-xl mx-5 h-[80px] flex items-center">How
+                     do you select an element from the DOM?
+                 </label>
+                 <!-- Arrow -->
+                 <div class="absolute top-6 right-2 lg:right-8 rotate-0 peer-checked:rotate-180">
+                     <i class="fa-solid fa-chevron-down"></i>
+                 </div>
+                 <!-- content -->
+                 <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                     <p class=" text-sm text-black ">
+                     <ul class="text-black p-5">
+                         <li>1. Using getElementById: The getElementById method allows you to select an element by
+                             its ID. ...</li>
+                         <li>2. Using getElementsByClassName:</li>
+                         <li>3. Using getElementsByTagName: .</li>
+                         <li>4. Using querySelector:</li>
+                         <li>5. Using querySelectorAll: </li>
+                         <li>6. Changing the Text Content. .</li>
+                         <li>7. Changing the HTML Content</li>
+                         <li>8. Changing the Attribute Value.</li>
+
+                     </ul>
+                     </p>
+                 </div>
+             </div>
+             <!-- FAQ  3 -->
+             
+
+                 <div class="relative lg:max-w-6xl mx-auto  bg-white  border-solid border-2 border-gray-100 ">
+                     <!-- input checkbox -->
+                     <input type="checkbox" id="input3" class="absolute peer opacity-0">
+                     <!-- heading -->
+                     <label for="input3" class="font-bold text-gray-700 text-lg lg:text-xl mx-5 h-[80px] flex items-center">What is event
+                         delegation in the context of the DOM, and why is it useful?
+                     </label>
+                     <!-- Arrow -->
+                     <div class="absolute top-6 right-2 lg:right-8 rotate-0 peer-checked:rotate-180">
+                         <i class="fa-solid fa-chevron-down"></i>
+                     </div>
+                     <!-- content -->
+                     <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                         <p class="p-5 text-sm text-black "> Event delegation refers to the process of using
+                             event propagation (bubbling) to handle events at a higher level in the DOM than the
+                             element on which the event originated. It allows us to attach a single event
+                             listener for elements that exist now or in the future. </p>
+                     </div>
+                 </div>
+                 <!-- FAQ 4 -->
+                 
+
+                     <div
+                         class="relative lg:max-w-6xl mx-auto  bg-white rounded-b-lg border-solid border-2 border-gray-100 ">
+                         <!-- input checkbox -->
+                         <input type="checkbox" id="input4" class="absolute peer opacity-0">
+                         <!-- heading -->
+                         <label for="input4" class="font-bold text-lg lg:text-xl text-gray-700 mx-5 h-[80px] flex items-center">How do you
+                             manipulate an element's attributes and styles using the DOM?
+                         </label>
+                         <!-- Arrow -->
+                         <div class="absolute top-6 right-2 lg:right-8 rotate-0 peer-checked:rotate-180">
+                             <i class="fa-solid fa-chevron-down"></i>
+                         </div>
+                         <!-- content -->
+                         <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                             <p class="p-5 text-sm text-black "> The classList object only provide methods to
+                                 change the class of an element. If you want to change other attributes like id ,
+                                 href , or src , you can use the setAttribute() method. The setAttribute() method
+                                 accepts two arguments: The name of the attribute to set. </p>
+                         </div>
+                     </div>
+
+    </main>
+    
+
+</body>
+
+</html>
