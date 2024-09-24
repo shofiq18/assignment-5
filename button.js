@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
     historyBtn.addEventListener('click', function(){
         historyBtn.classList.toggle('bg-green-500');
         historyBtn.classList.toggle('bg-slate-50');
-        donationBtn.classList.remove('bg-green-500');
+        donationBtn.classList.remove('#B4F461');
         donationBtn.classList.add('bg-slate-50');
     });
 });
