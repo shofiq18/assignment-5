@@ -29,47 +29,57 @@
             <section class="bg-[#F9F7F3] py-8">
                 <div class="px-3 lg:max-w-6xl mx-auto flex justify-between items-center ">
                     <div>
-                        <a href="blog.html">  <button  class="bg-[#B4F461] py-3 px-8 rounded-lg text-xl font-semibold text-black">Blog</button></a>
+                        <a href="blog.html"> <button
+                                class="bg-[#B4F461] py-3 px-8 rounded-lg text-xl font-semibold text-black">Blog</button></a>
                     </div>
                     <div class=" flex justify-center items-center gap-3">
                         <img src="assets/logo.png" alt="">
                         <p class="text-xl font-semibold text-black hidden lg:block">Donate Bangladesh</p>
                     </div>
-                    <div class="flex justify-center items-center gap-3">
-                        <img src="assets/coin.png" alt="">
-                        <p class="text-xl font-medium text-gray-500">10000 BDT</p>
-                    </div>
-    
+                    <button>
+                        <div class="flex justify-center items-center gap-3">
+                            <div><img src="assets/coin.png" alt=""></div>
+                            <div id="account-balance" class="text-xl font-medium text-gray-500">10000 <span>BDT</span>
+                            </div>
+
+                        </div>
+                    </button>
+
                 </div>
-    
+
             </section>
             <!-- Navber end here -->
-    
+
             <!-- Button & History  section start here -->
             <div class="bg-white">
                 <div class="max-w-6xl mx-auto flex justify-center items-center  space-x-8 lg:space-x-12 pt-16 pb-6  ">
-                    <button id="donation-btn" class="bg-[#B4F461] py-4 px-8 rounded-lg text-xl font-semibold text-black">Donation</button>
-                    <button id="history-btn" class=" bg-slate-50 border-solid border-2 border-gray-300 py-4 px-8 rounded-lg text-xl font-semibold text-gray-500">History</button>
+                    <button id="donation-btn"
+                        class="bg-[#B4F461] py-4 px-8 rounded-lg text-xl font-semibold text-black">Donation</button>
+                    <button id="history-btn"
+                        class=" bg-slate-50 border-solid border-2 border-gray-300 py-4 px-8 rounded-lg text-xl font-semibold text-gray-500">History</button>
                 </div>
                 <div class="divider mt-0 mb-0"></div>
             </div>
-            
-           
+
+
         </nav>
-        
+
 
     </header>
     <main>
         <!-- card-1  Noakhali -->
-        <div class="max-w-6xl mx-auto lg:flex justify-between my-8 p-3 lg:p-8 gap-8 rounded-2xl border-solid border-2 border-gray-100">
+        <div
+            class="max-w-6xl mx-auto lg:flex justify-between my-8 p-3 lg:p-8 gap-8 rounded-2xl border-solid border-2 border-gray-100">
             <div>
                 <img src="assets/noakhali.png" alt="">
             </div>
             <div class="lg:w-1/2 space-y-5">
 
                 <button class="bg-gray-200 mt-4 lg:mt-0 py-2 px-4 rounded-lg">
-                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span
-                            class="text-gray-600 text-base">0 BDT</span></div>
+                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt="">
+                        <div id="total-donate-balance" class="text-gray-600 text-base">0</div> <span
+                            class="text-gray-600 text-base">BDT</span>
+                    </div>
                 </button>
 
 
@@ -79,25 +89,27 @@
                     or small, makes difference. Please join us in supporting the relief efforts and making a positive
                     impact on the lives of those in need.</p>
 
-                <input
+                <input id="input-donate-money"
                     class=" bg-white w-full border-solid border-2 border-gray-300  py-4 px-5 rounded-lg  font-light text-gray-200"
                     type="text" placeholder="Write Donation Amount">
                 <br>
-                <button class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate
-                    Now</button>
+                <button id="donate-now-btn" class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate Now</button>
 
             </div>
         </div>
         <!-- card-2 Feni  -->
-        <div class="max-w-6xl mx-auto lg:flex justify-between my-8 p-3 lg:p-8 gap-8 rounded-2xl border-solid border-2 border-gray-100">
+        <div
+            class="max-w-6xl mx-auto lg:flex justify-between my-8 p-3 lg:p-8 gap-8 rounded-2xl border-solid border-2 border-gray-100">
             <div>
                 <img src="assets/feni.png" alt="">
             </div>
             <div class="lg:w-1/2 space-y-5">
 
                 <button class="bg-gray-200 mt-4 lg:mt-0 py-2 px-4 rounded-lg">
-                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span
-                            class="text-gray-600 text-base">600 BDT</span></div>
+                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt="">
+                        <div id="feni-total-donate-balance" class="text-gray-600 text-base">600</div> <span
+                            class="text-gray-600 text-base">BDT</span>
+                    </div>
                 </button>
 
 
@@ -108,11 +120,12 @@
                     rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
                     difference. Please consider donating today to assist those in urgent need.</p>
 
-                <input
+                <input id="feni-input-donate-money"
                     class=" bg-white w-full border-solid border-2 border-gray-300  py-4 px-5 rounded-lg text-base font-light text-gray-200"
                     type="text" placeholder="Write Donation Amount">
                 <br>
-                <button class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate
+                <button id="feni-donate-now-btn"
+                    class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate
                     Now</button>
 
             </div>
@@ -127,10 +140,11 @@
             <div class="lg:w-1/2 space-y-5">
 
                 <button class="bg-gray-200 mt-4 lg:mt-0 py-2 px-4 rounded-lg">
-                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span
-                            class="text-gray-600 text-base">2400 BDT</span></div>
+                    <div class="flex justify-center items-center gap-2"><img src="assets/coin.png" alt="">
+                        <div id="quota-total-donate-balance" class="text-gray-600 text-base">2400</div> <span
+                            class="text-gray-600 text-base">BDT</span>
+                    </div>
                 </button>
-
 
                 <h3 class="text-xl font-bold text-black">Aid for Injured in the Quota Movement</h3>
                 <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many
@@ -140,12 +154,12 @@
                     alleviating their suffering and aiding in their recovery. Please consider making a donation to
                     support these brave individuals in their time of need.</p>
 
-                <input
-                    class=" bg-white w-full border-solid border-2 border-gray-300  py-4 px-5 rounded-lg text-base font-light text-gray-200"
+                    <input id="quota-input-donate-money"
+                    class=" bg-white w-full border-solid border-2 border-gray-300  py-4 px-5 rounded-lg  font-light text-gray-200"
                     type="text" placeholder="Write Donation Amount">
-                <br>
-                <button class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate
-                    Now</button>
+                    <br>
+                    <button id="quota-donate-now-btn" class="bg-[#B4F461] w-full py-4 px-8 rounded-lg text-xl font-semibold text-black">Donate Now</button>
+
 
             </div>
         </div>
@@ -154,6 +168,10 @@
 
     </main>
     <script src="button.js"></script>
+    <script src="utilities.js"></script>
+    <script src="donateNow.js"></script>
+    <script src="feni.js"></script>
+    <script src="quota.js"></script>
     <footer>
 
 
