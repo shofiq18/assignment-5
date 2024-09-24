@@ -20,18 +20,14 @@ document.getElementById('donate-now-btn')
         document.getElementById('total-donate-balance').innerText = newDonateBalance;
         document.getElementById('account-balance').innerText = newAccountBalance;
 
-       
         // add history button transaction 
         const date = new Date()
-        // console.log(date);
-
         
-
         const div = document.createElement('div');
         div.classList.add('bg-white', 'p-4', 'rounded-lg', 'border-solid', 'border-2', 'border-gray-100');
         div.innerHTML = `
 
-        <P class="font-bold text-2xl">${donateNow} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</P>
+        <P class="font-semibold text-gray-800 mb-2 text-2xl">${donateNow} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</P>
         <div> 
         <P class="font-normal text-xl">${date} </P>
 
