@@ -3,6 +3,8 @@ document.getElementById('donate-now-btn')
     event.preventDefault();
 
     const donateNow = getInputFieldValueById('input-donate-money');
+        
+ 
     
     
     // wrong way to verify
@@ -11,6 +13,7 @@ document.getElementById('donate-now-btn')
         const accountBalance = getTextFieldValueById('account-balance');
         if(isNaN(donateBalance) || isNaN(accountBalance)) {
             alert('Error: Invalid values.');
+            document.getElementById('input-donate-money').value = ''; // Clear the input field
             return;
         }
         const newDonateBalance = donateBalance + donateNow;
@@ -34,18 +37,22 @@ document.getElementById('donate-now-btn')
         <div/>`
 
         document.getElementById('history-container').appendChild(div);
+        
 
 
        }
        else{
             alert('Failed to donate: Insufficient account balance.')
        }
+       
+       document.getElementById('input-donate-money').value = '';
   
         
 
     }
     else{
         alert('Failed to donate: Please enter a valid amount.')
+        document.getElementById('input-donate-money').value = '';
     }
    
 
